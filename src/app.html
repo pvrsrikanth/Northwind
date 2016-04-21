@@ -1,0 +1,15 @@
+<template>
+  <!--<require from="nav-bar.html"></require>
+  <require from="bootstrap/css/bootstrap.css"></require>-->
+  <require from="assets/css/style.css"></require>
+
+  <require from="header.html"></require>
+  <require from="nav-aside.html"></require>
+
+    <nav-aside router.bind="router"></nav-aside>
+<header router.bind="router"></header>
+
+  <div class="page-host">
+    <router-view></router-view>
+  </div>
+</template>

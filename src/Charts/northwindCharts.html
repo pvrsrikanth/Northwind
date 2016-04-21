@@ -1,0 +1,28 @@
+<template>
+  <section id="main-content">
+    <section class="wrapper site-min-height">
+      <fieldset>
+        <div class="row mt">
+          <div class="col-lg-6">
+            <div class="content-panel">
+              <h4><i class="fa fa-angle-right"></i> Produce Categories</h4>
+              <div class="panel-body">
+                <chart id="produce-doughnut-chart" class="graph" type="Doughnut" 
+                  should-update="true" data.bind="produce" throttle="2000"></chart>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-6">
+            <div class="content-panel">
+              <h4><i class="fa fa-angle-right"></i> Seafood Categories</h4>
+              <div class="panel-body">
+                <chart id="seafood-doughnut-chart" class="graph" type="Doughnut" 
+                  should-update="true" data.bind="seafoods" throttle="2000"></chart>
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </section>
+  </section>
+</template>
